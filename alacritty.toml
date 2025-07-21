@@ -1,0 +1,51 @@
+#remove after configuring it all
+general.live_config_reload = true
+
+general.working_directory = "C:/"
+
+
+
+
+
+
+
+[window]
+#dimensions = {columns = 0, lines = 0}
+#position = {x = 50, y = 50}
+padding = {x = 10, y = 5}
+decorations = "None"
+opacity = 0.90
+startup_mode = "Fullscreen"
+#title = "Terminal"
+dynamic_title = true
+decorations_theme_variant = "Dark"
+level = "Normal" #can be set as <AlwaysOnTop> 
+
+
+
+
+[scrolling]
+history = 50
+multiplier = 5
+
+[font]
+#normal = {family = "Monofonto", style = "Regular"}
+normal = {family = "Cascadia Mono", style = "Regular"}
+size = 12
+#offset = {x = 1, y = 1}
+
+
+
+
+[colors.primary]
+foreground = "#d9d9d9"
+background = "#191919"
+dim_foreground = "#828482"
+bright_foreground = "None"
+#cursor = {text = "CellBackground", cursor = "CellForeground"}
+
+
+
+[mouse]
+hide_when_typing = true
+
