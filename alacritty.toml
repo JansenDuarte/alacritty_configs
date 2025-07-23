@@ -1,7 +1,7 @@
 #remove after configuring it all
 general.live_config_reload = true
 
-general.working_directory = "C:/"
+general.working_directory = "C:/Users/vikin/AppData/Roaming/alacritty/"
 
 
 
@@ -12,7 +12,7 @@ general.working_directory = "C:/"
 [window]
 #dimensions = {columns = 0, lines = 0}
 #position = {x = 50, y = 50}
-padding = {x = 10, y = 5}
+padding = {x = 15, y = 10}
 decorations = "None"
 opacity = 0.90
 startup_mode = "Fullscreen"
@@ -34,18 +34,54 @@ normal = {family = "Cascadia Mono", style = "Regular"}
 size = 12
 #offset = {x = 1, y = 1}
 
+[terminal]
+#shell = {program = "C:/Program Files/Git/git-bash.exe", args = []}
 
 
-
-[colors.primary]
-foreground = "#d9d9d9"
-background = "#191919"
-dim_foreground = "#828482"
-bright_foreground = "None"
+#[colors.primary]
+#foreground = "#d9d9d9"
+#background = "#191919"
+#dim_foreground = "#828482"
+#bright_foreground = "None"
 #cursor = {text = "CellBackground", cursor = "CellForeground"}
+[cursor]
+style = {shape = "Block", blinking = "On"}
+blink_interval = 500
 
+[colors]
+  # Default colors
+  [colors.primary]
+    background= '0x001515'
+    foreground= '0xe6f8f8'
 
+  # Normal colors
+  [colors.normal]
+    black=   '0x002221'
+    red=     '0xea3431'
+    green=   '0x00b6b6'
+    yellow=  '0xf8b017'
+    blue=    '0x4894fd'
+    magenta= '0xe01dca'
+    cyan=    '0x1ab2ad'
+    white=   '0x99dddb'
+
+  # Bright colors
+ [colors.bright]
+    black=   '0x006562'
+    red=     '0xea3431'
+    green=   '0x00b6b6'
+    yellow=  '0xf8b017'
+    blue=    '0x4894fd'
+    magenta= '0xe01dca'
+    cyan=    '0x1ab2ad'
+    white=   '0xe6f6f6'
 
 [mouse]
 hide_when_typing = true
 
+
+
+[keyboard]
+bindings = [
+
+]
