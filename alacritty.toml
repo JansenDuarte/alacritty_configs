@@ -39,7 +39,7 @@ size = 12
 
 #actual .exe to open the terminal
 [terminal]
-shell = {program = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", args = ["-NoLogo"]}
+shell = {program = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", args = ["-NoLogo", "-NoExit", "-c \"C:/Users/vikin/AppData/Roaming/Alacritty/init.ps1\""]}
 
 
 #some are overwritten by nvim (for some reason)
@@ -88,11 +88,11 @@ bindings = [
 { key = "P", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/\r nvim 00.personal_notes.md\r" },
 
 #goto class notes
-{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\r nvim 00.notes.md\r" },
+{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\r nvim ./00.notes.md\r" },
 
 #goto work notes
-{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\r nvim 00.notes.md\r" },
+{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\r nvim ./00.notes.md\r" },
 
 #goto alacritty configs
-{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r nvim alacritty.toml\r" },
+{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r nvim ./alacritty.toml\r" },
 ]
