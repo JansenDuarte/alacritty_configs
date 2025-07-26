@@ -1,80 +1,81 @@
-#remove after configuring it all
+#live config reloading
 general.live_config_reload = true
 
+#initial directory
 general.working_directory = "C:/Users/vikin/AppData/Roaming/alacritty/"
 
 
-
-
-
-
-
+#window settings
 [window]
 #dimensions = {columns = 0, lines = 0}
 #position = {x = 50, y = 50}
+#internal padding for the text
 padding = {x = 15, y = 10}
+#window decorations
 decorations = "None"
-opacity = 0.90
+opacity = 0.85
 startup_mode = "Fullscreen"
-#title = "Terminal"
+title = "Terminal"
+#allow other apps to change title
 dynamic_title = true
 decorations_theme_variant = "Dark"
 level = "Normal" #can be set as <AlwaysOnTop> 
 
 
-
-
+#'scrolling' history of commands
 [scrolling]
-history = 50
+history = 5000
 multiplier = 5
 
+
+#font
 [font]
 #normal = {family = "Monofonto", style = "Regular"}
 normal = {family = "Cascadia Mono", style = "Regular"}
 size = 12
+#character padding
 #offset = {x = 1, y = 1}
 
+
+#actual .exe to open the terminal
 [terminal]
-#shell = {program = "C:/Program Files/Git/git-bash.exe", args = []}
+shell = {program = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", args = ["-NoLogo"]}
 
 
-#[colors.primary]
-#foreground = "#d9d9d9"
-#background = "#191919"
-#dim_foreground = "#828482"
-#bright_foreground = "None"
-#cursor = {text = "CellBackground", cursor = "CellForeground"}
+#some are overwritten by nvim (for some reason)
 [cursor]
 style = {shape = "Block", blinking = "On"}
 blink_interval = 500
 
+
+#terminal colors
 [colors]
-  # Default colors
-  [colors.primary]
-    background= '0x001515'
-    foreground= '0xe6f8f8'
+#Default colors
+	[colors.primary]
+	background= '0x001515'
+	foreground= '0xe6f8f8'
 
-  # Normal colors
-  [colors.normal]
-    black=   '0x002221'
-    red=     '0xea3431'
-    green=   '0x00b6b6'
-    yellow=  '0xf8b017'
-    blue=    '0x4894fd'
-    magenta= '0xe01dca'
-    cyan=    '0x1ab2ad'
-    white=   '0x99dddb'
+# Normal colors
+	[colors.normal]
+	black=   '0x002221'
+	red=     '0xea3431'
+	green=   '0x00b6b6'
+	yellow=  '0xf8b017'
+	blue=    '0x4894fd'
+	magenta= '0xe01dca'
+	cyan=    '0x1ab2ad'
+	white=   '0x99dddb'
 
-  # Bright colors
- [colors.bright]
-    black=   '0x006562'
-    red=     '0xea3431'
-    green=   '0x00b6b6'
-    yellow=  '0xf8b017'
-    blue=    '0x4894fd'
-    magenta= '0xe01dca'
-    cyan=    '0x1ab2ad'
-    white=   '0xe6f6f6'
+# Bright colors
+	[colors.bright]
+	black=   '0x006562'
+	red=     '0xea3431'
+	green=   '0x00b6b6'
+	yellow=  '0xf8b017'
+	blue=    '0x4894fd'
+	magenta= '0xe01dca'
+	cyan=    '0x1ab2ad'
+	white=   '0xe6f6f6'
 
 [mouse]
 hide_when_typing = true
@@ -83,5 +84,15 @@ hide_when_typing = true
 
 [keyboard]
 bindings = [
+#goto personal notes
+{ key = "P", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/\r nvim 00.personal_notes.md\r" },
 
+#goto class notes
+{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\r nvim 00.notes.md\r" },
+
+#goto work notes
+{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\r nvim 00.notes.md\r" },
+
+#goto alacritty configs
+{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r nvim alacritty.toml\r" },
 ]
