@@ -86,14 +86,17 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 [keyboard]
 bindings = [
 #goto personal notes
-{ key = "P", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/\r nvim 00.personal_notes.md\r" },
+{ key = "P", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/\rnvim 00.personal_notes.md\r" },
 
 #goto class notes
-{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\r nvim ./00.notes.md\r" },
+{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\rnvim ./00.notes.md\r" },
 
 #goto work notes
-{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\r nvim ./00.notes.md\r" },
+{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\rnvim ./00.notes.md\r" },
 
 #goto alacritty configs
-{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r nvim ./alacritty.toml\r" },
+{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\rnvim ./alacritty.toml\r" },
+
+#reload powershell configs
+{ key = "R", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r./init.ps1\r" },
 ]
