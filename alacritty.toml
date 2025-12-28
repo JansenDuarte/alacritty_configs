@@ -99,4 +99,9 @@ bindings = [
 
 #reload powershell configs
 { key = "R", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r./init.ps1\r" },
+
+#goto xampp configs
+{ key = "X", mods = "Alt", chars = "cd C:/xampp/apache/conf/\rnvim ./httpd.conf\r" },
+
 ]
+
