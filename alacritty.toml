@@ -13,7 +13,7 @@ general.working_directory = "C:/Users/vikin/AppData/Roaming/alacritty/"
 padding = {x = 15, y = 10}
 #window decorations
 decorations = "None"
-opacity = 0.85
+opacity = 0.95
 startup_mode = "Fullscreen"
 title = "Terminal"
 #allow other apps to change title
@@ -85,23 +85,40 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [keyboard]
 bindings = [
-#goto personal notes
-{ key = "P", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/\rnvim 00.personal_notes.md\r" },
+#open personal notes
+{ key = "J", mods = "Control", chars = "nvim C:/00.Jansen-PastaDados/00.personal_notes.md\r" },
+#goto personal notes folder
+{ key = "J", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados\r" },
 
-#goto class notes
-{ key = "C", mods = "Alt", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe/\rnvim ./00.notes.md\r" },
+#open class notes
+{ key = "C", mods = "Alt", chars = "nvim C:/00.Jansen-PastaDados/Aulas/Felipe/00.notes.md\r" },
+#goto class notes folder
+{ key = "C", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe\r" },
 
-#goto work notes
-{ key = "W", mods = "Alt", chars = "cd C:/Melius/00.notes/\rnvim ./00.notes.md\r" },
+#open work notes
+{ key = "W", mods = "Alt", chars = "nvim C:/Melius/00.notes/00.notes.md\r" },
+#goto work web folder
+{ key = "W", mods = "Alt | Shift", chars = "cd C:/web/preprod/credpay/projects\r" },
 
+#open alacritty configs
+{ key = "A", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/alacritty.toml\r" },
 #goto alacritty configs
-{ key = "A", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\rnvim ./alacritty.toml\r" },
+{ key = "A", mods = "Alt | Shift", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r" },
 
+#open powershell configs
+{ key = "P", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
 #reload powershell configs
-{ key = "R", mods = "Alt", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r./init.ps1\r" },
+{ key = "P", mods = "Alt | Shift", chars = "C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
 
+#open xampp configs
+{ key = "X", mods = "Alt", chars = "nvim C:/xampp/apache/conf/httpd.conf\r" },
 #goto xampp configs
-{ key = "X", mods = "Alt", chars = "cd C:/xampp/apache/conf/\rnvim ./httpd.conf\r" },
+{ key = "X", mods = "Alt | Shift", chars = "cd C:/xampp/apache/conf/\r" },
 
+#fire pytest
+{ key = "P", mods = "Control", chars = "py -m pytest"},
+
+#run start_work_layout
+{ key = "S", mods = "Alt", chars = "./start_work_layout.ps1\r"}
 ]
 
