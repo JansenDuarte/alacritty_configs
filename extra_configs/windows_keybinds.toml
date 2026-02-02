@@ -1,0 +1,38 @@
+[keyboard]
+bindings = [
+#open personal notes
+{ key = "J", mods = "Control", chars = "nvim C:/00.Jansen-PastaDados/00.personal_notes.md\r" },
+#goto personal notes folder
+{ key = "J", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados\r" },
+
+#open class notes
+{ key = "C", mods = "Alt", chars = "nvim C:/00.Jansen-PastaDados/Aulas/Felipe/00.notes.md\r" },
+#goto class notes folder
+{ key = "C", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe\r" },
+
+#open work notes
+{ key = "W", mods = "Alt", chars = "nvim C:/Melius/00.notes/00.notes.md\r" },
+#goto work web folder
+{ key = "W", mods = "Alt | Shift", chars = "cd C:/web/preprod/credpay/projects\r" },
+
+#open alacritty configs
+{ key = "A", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/alacritty.toml\r" },
+#goto alacritty configs
+{ key = "A", mods = "Alt | Shift", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r" },
+
+#open powershell configs
+{ key = "P", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
+#reload powershell configs
+{ key = "P", mods = "Alt | Shift", chars = "C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
+
+#open xampp configs
+{ key = "X", mods = "Alt", chars = "nvim C:/xampp/apache/conf/httpd.conf\r" },
+#goto xampp configs
+{ key = "X", mods = "Alt | Shift", chars = "cd C:/xampp/apache/conf/\r" },
+
+#fire pytest
+{ key = "P", mods = "Control", chars = "py -m pytest"},
+
+#run start_work_layout
+{ key = "S", mods = "Alt", chars = "./start_work_layout.ps1\r"}
+]

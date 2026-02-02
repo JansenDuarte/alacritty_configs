@@ -1,124 +1,76 @@
-#live config reloading
 general.live_config_reload = true
-
-#initial directory
-general.working_directory = "C:/Users/vikin/AppData/Roaming/alacritty/"
-
-
-#window settings
-[window]
-#dimensions = {columns = 0, lines = 0}
-#position = {x = 50, y = 50}
-#internal padding for the text
-padding = {x = 15, y = 10}
-#window decorations
-decorations = "None"
-opacity = 0.95
-startup_mode = "Fullscreen"
-title = "Terminal"
-#allow other apps to change title
-dynamic_title = true
-decorations_theme_variant = "Dark"
-level = "Normal" #can be set as <AlwaysOnTop> 
-
-
-#'scrolling' history of commands
-[scrolling]
-history = 5000
-multiplier = 5
-
-
-#font
-[font]
-#normal = {family = "Monofonto", style = "Regular"}
-normal = {family = "Cascadia Mono", style = "Regular"}
-size = 12
-#character padding
-#offset = {x = 1, y = 1}
-
-
-#actual .exe to open the terminal
-[terminal]
-shell = {program = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", args = ["-NoLogo", "-NoExit", "-c \"C:/Users/vikin/AppData/Roaming/Alacritty/init.ps1\""]}
-
-
-#some are overwritten by nvim (for some reason)
-[cursor]
-style = {shape = "Block", blinking = "On"}
-blink_interval = 500
-
-
-#terminal colors
-[colors]
-#Default colors
-	[colors.primary]
-	background= '0x001515'
-	foreground= '0xe6f8f8'
-
-# Normal colors
-	[colors.normal]
-	black=   '0x002221'
-	red=     '0xea3431'
-	green=   '0x00b6b6'
-	yellow=  '0xf8b017'
-	blue=    '0x4894fd'
-	magenta= '0xe01dca'
-	cyan=    '0x1ab2ad'
-	white=   '0x99dddb'
-
-# Bright colors
-	[colors.bright]
-	black=   '0x006562'
-	red=     '0xea3431'
-	green=   '0x00b6b6'
-	yellow=  '0xf8b017'
-	blue=    '0x4894fd'
-	magenta= '0xe01dca'
-	cyan=    '0x1ab2ad'
-	white=   '0xe6f6f6'
-
-[mouse]
-hide_when_typing = true
+general.import = [
+	"~/.config/alacritty/extra_configs/linux_keybinds.toml",
+]
 
 [env]
-WINIT_X11_SCALE_FACTOR = "1.0"
+	alacritty_dir="~/.config/alacritty/"
 
-[keyboard]
-bindings = [
-#open personal notes
-{ key = "J", mods = "Control", chars = "nvim C:/00.Jansen-PastaDados/00.personal_notes.md\r" },
-#goto personal notes folder
-{ key = "J", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados\r" },
+[scrolling]
+	history = 10000
+	multiplier = 5
 
-#open class notes
-{ key = "C", mods = "Alt", chars = "nvim C:/00.Jansen-PastaDados/Aulas/Felipe/00.notes.md\r" },
-#goto class notes folder
-{ key = "C", mods = "Alt | Shift", chars = "cd C:/00.Jansen-PastaDados/Aulas/Felipe\r" },
 
-#open work notes
-{ key = "W", mods = "Alt", chars = "nvim C:/Melius/00.notes/00.notes.md\r" },
-#goto work web folder
-{ key = "W", mods = "Alt | Shift", chars = "cd C:/web/preprod/credpay/projects\r" },
+[window]
+	padding = { x = 15, y = 10 }
+	decorations = "None"
+	opacity = 0.85
+	startup_mode = "Maximized"
+	title = "Terminal"
+	dynamic_title = true
+	decorations_theme_variant = "Dark"
+	level = "Normal" #can be <AlwaysOnTop>
 
-#open alacritty configs
-{ key = "A", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/alacritty.toml\r" },
-#goto alacritty configs
-{ key = "A", mods = "Alt | Shift", chars = "cd C:/Users/vikin/AppData/Roaming/alacritty/\r" },
+[font]
+	# normal = { family = "Nimbus Mono", style = "Regular" }
+	normal = { family = "DejaVu Sans Mono", style = "Regular" }
 
-#open powershell configs
-{ key = "P", mods = "Alt", chars = "nvim C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
-#reload powershell configs
-{ key = "P", mods = "Alt | Shift", chars = "C:/Users/vikin/AppData/Roaming/alacritty/init.ps1\r" },
+#[terminal]
+#shell = { program = "/bin/bash", args = ["-c", "tmux attach || tmux"] }
 
-#open xampp configs
-{ key = "X", mods = "Alt", chars = "nvim C:/xampp/apache/conf/httpd.conf\r" },
-#goto xampp configs
-{ key = "X", mods = "Alt | Shift", chars = "cd C:/xampp/apache/conf/\r" },
+[cursor]
+	style = { shape = "Block", blinking = "Always" }
+	blink_interval = 500
 
-#fire pytest
-{ key = "P", mods = "Control", chars = "py -m pytest"},
+[colors]
+	draw_bold_text_with_bright_colors = true
 
-#run start_work_layout
-{ key = "S", mods = "Alt", chars = "./start_work_layout.ps1\r"}
-]
+	cursor = { text = "CellBackground", cursor = "CellForeground" }
+	vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+
+	[colors.search]
+		matches = { foreground = "#202020", background = "#ac4242" }
+		focused_match = { foreground = "#181818", background = "#f4bf75" }
+
+	[colors.primary]
+		background = '#05021e'
+		foreground = '#d8d8d8'
+		dim_foreground = '#848484'
+		bright_foreground = '#d899d8'
+
+	[colors.normal]
+		black =		'#002221'
+		red =		'#ea3431'
+		green =		'#00b6b6'
+		yellow =	'#f8b017'
+		blue =		'#4894fd'
+		magenta =	'#e01dca'
+		cyan =		'#1ab2ad'
+		white = 	'#99dddb'
+	
+	[colors.bright]
+		black =		'#006562'
+		red =		'#ea3431'
+		green =		'#00b6b6'
+		yellow =	'#f8b017'
+		blue =		'#4894fd'
+		magenta =	'#e01dca'
+		cyan =		'#1ab2ad'
+		white =		'#e6f6f6'
+
+[mouse]
+	hide_when_typing = true
+
+
+
 

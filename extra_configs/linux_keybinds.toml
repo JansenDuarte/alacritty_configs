@@ -1,0 +1,56 @@
+[keyboard]
+bindings = [
+
+
+
+# ===== REGION Open
+
+# open Alacritty configs
+{ key="A", mods="Alt", chars="\u0015nvim ~/.config/alacritty/alacritty.toml\r"},
+
+# open NeoVim configs (directly from terminal)
+{ key="V", mods="Alt", chars="\u0015nvim ~/.config/nvim/init.lua\r"},
+
+# open class notes
+{ key="C", mods="Alt", chars="\u0015nvim /media/jansenduarte/hdd/00.jd_data/02.lectures/00.notes.md\r"},
+
+# ===== ENDREGION Open
+
+
+
+# ===== REGION Goto
+
+# goto 00.jd folder
+{ key="J", mods="Shift | Control", chars="\u0015cd ~/00.jd_data/00.jd/\r"},
+
+# goto /media/jansenduarte/hdd/99.work folder
+{ key="W", mods="Shift | Control", chars="\u0015cd /media/jansenduarte/hdd/99.work/\r"},
+
+# goto class notes
+{ key="C", mods="Shift | Control", chars="\u0015cd /media/jansenduarte/hdd/00.jd_data/02.lectures/\r"},
+
+# ===== ENDREGION Goto
+
+
+
+# ===== REGION Scripts and shortcuts
+
+# change audio output
+{ key="O", mods="Alt | Shift", chars="\u0015~/.config/alacritty/bash_scripts/switch_audio.sh\r"},
+
+# reload .bashrc
+{ key="B", mods="Alt | Shift", chars="\u0015source ~/.bashrc\r"},
+
+# restart apache2
+{ key="X", mods="Alt | Shift", chars="\u0015sudo systemctl restart apache2\r"},
+
+# print pytest statement
+{ key="P", mods="Alt | Shift", chars="\u0015py -m pytest"},
+
+# start work env
+{ key="W", mods="Alt | Shift", chars="\u0015source ~/.config/alacritty/bash_scripts/start_work.sh\r"},
+
+# ===== ENDREGION Scripts and shortcuts
+
+
+]
