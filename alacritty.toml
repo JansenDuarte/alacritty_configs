@@ -24,6 +24,7 @@ general.import = [
 [font]
 	# normal = { family = "Nimbus Mono", style = "Regular" }
 	normal = { family = "DejaVu Sans Mono", style = "Regular" }
+	# normal = { family = "jd font", style = "Regular" }
 
 #[terminal]
 #shell = { program = "/bin/bash", args = ["-c", "tmux attach || tmux"] }
@@ -46,7 +47,10 @@ general.import = [
 		background = '#05021e'
 		foreground = '#d8d8d8'
 		dim_foreground = '#848484'
-		bright_foreground = '#d899d8'
+		# bright_foreground = '#85678f'
+		# bright_foreground = '#8abeb7'
+		# bright_foreground = '#d899d8'
+		bright_foreground = '#b03060'
 
 	[colors.normal]
 		black =		'#002221'
@@ -62,7 +66,7 @@ general.import = [
 		black =		'#006562'
 		red =		'#ea3431'
 		green =		'#00b6b6'
-		yellow =	'#f8b017'
+		yellow =	'#faf32f'
 		blue =		'#4894fd'
 		magenta =	'#e01dca'
 		cyan =		'#1ab2ad'

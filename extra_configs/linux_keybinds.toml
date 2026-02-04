@@ -20,6 +20,9 @@ bindings = [
 
 # ===== REGION Goto
 
+# goto Alacritty configs
+{ key="A", mods="Shift | Control", chars="\u0015cd ~/.config/alacritty/\r"},
+
 # goto 00.jd folder
 { key="J", mods="Shift | Control", chars="\u0015cd ~/00.jd_data/00.jd/\r"},
 
@@ -49,6 +52,9 @@ bindings = [
 
 # start work env
 { key="W", mods="Alt | Shift", chars="\u0015source ~/.config/alacritty/bash_scripts/start_work.sh\r"},
+
+#spawn new instance of Alacritty
+{ key="N", mods="Alt | Shift", action="SpawnNewInstance"},
 
 # ===== ENDREGION Scripts and shortcuts
 
