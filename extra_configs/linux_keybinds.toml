@@ -24,7 +24,7 @@ bindings = [
 { key="A", mods="Shift | Control", chars="\u0015cd ~/.config/alacritty/\r"},
 
 # goto 00.jd folder
-{ key="J", mods="Shift | Control", chars="\u0015cd ~/00.jd_data/00.jd/\r"},
+{ key="J", mods="Shift | Control", chars="\u0015cd ~/00.jd_data/\r"},
 
 # goto /media/jansenduarte/hdd/99.work folder
 { key="W", mods="Shift | Control", chars="\u0015cd /media/jansenduarte/hdd/99.work/\r"},
