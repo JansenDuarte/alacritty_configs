@@ -10,7 +10,6 @@ general.import = [
 	history = 10000
 	multiplier = 5
 
-
 [window]
 	padding = { x = 15, y = 10 }
 	decorations = "None"
@@ -24,10 +23,6 @@ general.import = [
 [font]
 	# normal = { family = "Nimbus Mono", style = "Regular" }
 	normal = { family = "DejaVu Sans Mono", style = "Regular" }
-	# normal = { family = "jd font", style = "Regular" }
-
-#[terminal]
-#shell = { program = "/bin/bash", args = ["-c", "tmux attach || tmux"] }
 
 [cursor]
 	style = { shape = "Block", blinking = "Always" }
@@ -47,10 +42,10 @@ general.import = [
 		background = '#05021e'
 		foreground = '#d8d8d8'
 		dim_foreground = '#848484'
-		# bright_foreground = '#85678f'
-		# bright_foreground = '#8abeb7'
-		# bright_foreground = '#d899d8'
-		bright_foreground = '#b03060'
+		# bright_foreground = '#85678f'	#deep purple
+		# bright_foreground = '#8abeb7'	#bright aqua
+		# bright_foreground = '#d899d8' #bright pink
+		bright_foreground = '#b03060'	#deep marron
 
 	[colors.normal]
 		black =		'#002221'
