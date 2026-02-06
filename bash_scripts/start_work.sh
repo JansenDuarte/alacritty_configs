@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/00.jd_data/00.jd/slow_print.sh
+source ./slow_print.sh
 
 #Wait aNd EXECute
 wnexec(){
